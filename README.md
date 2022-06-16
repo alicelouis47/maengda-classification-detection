@@ -5,7 +5,7 @@
 ### เนื่องจาก library icevisionไม่supportบนwindows จึงไม่สามารถใช้บน windows ได้
 * โหลดไฟล์โมเดลเพิ่มเติมเนื่องจากข้อจำกัดของ github   
   * โหลดโมเดลทั้งหมด
-  * -
+  * https://drive.google.com/drive/folders/1oceon16uvdo5fn4XAJUEyYtXqHmza6jk?usp=sharing
   * นำโฟลเดอร์โมเดลใส่ใน mangda-detection
 * วิธีการติดตั้ง libraries เพิ่มเติมเนื่องจากไม่สามารถลงใน requirements.txt ได้
   * pip3 install -r requirements.txt
