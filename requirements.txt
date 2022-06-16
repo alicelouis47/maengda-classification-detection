@@ -16,3 +16,4 @@ progressbar2
 tqdm
 Shapely
 icevision_dashboards
+streamlit
