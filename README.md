@@ -8,7 +8,7 @@
   * โหลดโมเดลทั้งหมด
   * https://drive.google.com/drive/folders/1oceon16uvdo5fn4XAJUEyYtXqHmza6jk?usp=sharing
   * นำโฟลเดอร์โมเดลใส่ใน mangda-detection
-* วิธีการติดตั้ง libraries เพิ่มเติมเนื่องจากไม่สามารถลงใน requirements.txt ได้
+* วิธีการติดตั้ง libraries เพิ่มเติมเนื่องจากไม่สามารถลงใน requirements.txt ได้ ใช้ python version 3.8.10 เท่านั้น
   * pip3 install torch==1.10.0+cu102 torchvision==0.11.1+cu102 -f https://download.pytorch.org/whl/torch_stable.html
   * pip3 install mmcv-full==1.3.17 -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.10.0/index.html
   * pip3 install -r requirements.txt
