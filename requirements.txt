@@ -1,4 +1,5 @@
 mmdet==2.17.0
+mmcv
 icevision[all]
 fastbook
 gradio
@@ -6,13 +7,6 @@ icedata
 progressbar2
 tqdm
 streamlit
-mmdet==2.17.0
-icevision[all]
-fastbook
-gradio
-icedata
-progressbar2
-tqdm
 Shapely
 icevision_dashboards
 streamlit
