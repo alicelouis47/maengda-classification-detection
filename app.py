@@ -37,6 +37,7 @@ st.header('AI Builders ปีที่ 2')
 st.subheader('จัดทำโดย นายภัคพล อาจบุราย ชั้น ม.6 โรงเรียนวิทยาศาสตร์จุฬาภรณราชวิทยาลัย บุรีรัมย์')
 st.caption('Medium: shorturl.at/frCOR')
 st.caption('GitHub: https://github.com/alicelouis47/mangda-detection')
+st.caption('แบบสอบถามเพื่อประเมินคุณภาพของโมเดล')
 
 
 uploaded_file = st.file_uploader("อัปโหลดไฟล์ภาพ")
