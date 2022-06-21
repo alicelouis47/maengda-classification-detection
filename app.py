@@ -35,9 +35,11 @@ import streamlit as st
 st.title('Mangda detectio and classification')
 st.header('AI Builders ปีที่ 2')
 st.subheader('จัดทำโดย นายภัคพล อาจบุราย ชั้น ม.6 โรงเรียนวิทยาศาสตร์จุฬาภรณราชวิทยาลัย บุรีรัมย์')
+st.subheader('โพรเจกต์นี้ เป็นส่วนหนึ่งของโครงการ AI Builders (ก่อตั้งจากความร่วมมือของ VISTEC, AIResearch และ Central Digital)')
 st.caption('Medium: shorturl.at/frCOR')
 st.caption('GitHub: https://github.com/alicelouis47/mangda-detection')
-st.caption('แบบสอบถามเพื่อประเมินคุณภาพของโมเดล')
+st.caption('แบบสอบถามเพื่อประเมินคุณภาพของโมเดล: https://forms.gle/zqo2cCg3yepf4XKi6')
+st.caption('หมายเหตุ: Carcinoscorpius_rotundicauda คือ แมงดาถ้วย(มีพิษ) Tachypleus_gigas คือ แมงดาจาน(กินได้)')
 
 
 uploaded_file = st.file_uploader("อัปโหลดไฟล์ภาพ")
@@ -88,10 +90,9 @@ if uploaded_file is not None:
             Pre_F = learn_F.predict(im2)
             prop_F = Pre_F[2].max()
             prop_float = prop_F.item()
+
             st.metric(label='img'+str(i+1), value=Pre_F[0], delta=str(pre))
-
             # print('class:',Pre_F[0], ",accuracy =", '%.3f' %prop_float)
-
             # Draw draw boxes
             xmin = int(BBox_list[0])
             ymin = int(BBox_list[1])
