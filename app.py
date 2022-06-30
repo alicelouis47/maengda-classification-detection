@@ -21,7 +21,6 @@ from sklearn.svm import SVC
 import os
 import torchvision.transforms.functional as fn
 from torchvision.transforms.functional import crop
-import cv2
 import numpy as np
 import streamlit as st
 import urllib.request
