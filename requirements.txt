@@ -1,5 +1,5 @@
 mmdet==2.17.0
-icevision[all]
+mmcv
 fastbook
 gradio
 icedata
@@ -9,3 +9,4 @@ streamlit
 Shapely
 icevision_dashboards
 streamlit
+opencv-python
