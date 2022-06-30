@@ -27,6 +27,7 @@ from torchvision.transforms.functional import crop
 import cv2
 import numpy as np
 import streamlit as st
+import urllib.request
 
 
 st.title('Maengda classification')
@@ -58,19 +59,22 @@ st.caption('https://www4.fisheries.go.th/local/index.php/main/view_activities/12
 
 uploaded_file = st.file_uploader("อัปโหลดไฟล์ภาพ")
 
+# download model
+model_url = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/VGG16_fastai.pkl"
+urllib.request.urlretrieve(model_url,"VGG16_fastai.pkl")
+
+model_url1 = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/densenet201_fastai.pkl"
+urllib.request.urlretrieve(model_url1,"densenet201_fastai.pkl")
+
+model_url2 = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/resnext50_fastai.pkl"
+urllib.request.urlretrieve(model_url2,"resnext50_fastai.pkl")
+
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-    # โหลดโมเดลที่เซฟมาเพื่อทำนายผลใน test set
-    model_loaded = model_from_checkpoint("./model_OBJ/mangda_det_660.pth")
-    model = model_loaded['model']
-    model_type = model_loaded["model_type"]
-    backbone = model_loaded["backbone"]
-    class_map = model_loaded["class_map"]
-    img_size = model_loaded["img_size"]
-    # โหลดโมเดลที่เซฟมาเพื่อทำนายผลใน test set
-    learn_BF = load_learner('./model_back_front/VGG16_fastai.pkl')
-    learn_B = load_learner('./model_back/densenet201_fastai.pkl')
-    learn_F = load_learner('./model_front/resnext50_fastai.pkl')
+    # โหลดโมเดลที่เซฟ
+    learn_BF = load_learner('VGG16_fastai.pkl')
+    learn_B = load_learner('densenet201_fastai.pkl')
+    learn_F = load_learner('resnext50_fastai.pkl')
     valid_tfms = tfms.A.Adapter([*tfms.A.resize_and_pad((img_size,img_size)), tfms.A.Normalize()])
     # predict image
     pred_dict  = model_type.end2end_detect(img, valid_tfms, model, class_map=class_map, detection_threshold=0.7)
