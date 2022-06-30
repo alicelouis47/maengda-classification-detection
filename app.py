@@ -7,7 +7,6 @@ from PIL import Image
 import PIL, requests
 import torch
 from torchvision import transforms
-import gradio as gr
 from fastbook import *
 from fastai.vision.all import *
 import os.path as op
