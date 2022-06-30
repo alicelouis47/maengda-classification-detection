@@ -19,9 +19,7 @@ from sklearn.metrics import precision_recall_fscore_support, accuracy_score, roc
 import matplotlib.pyplot as plt
 from sklearn.svm import SVC
 import os
-import torch
 import torchvision.transforms.functional as fn
-from PIL import Image
 from torchvision.transforms.functional import crop
 import cv2
 import numpy as np
