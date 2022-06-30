@@ -3,7 +3,7 @@
 * โปรเจคได้รับการพัฒนาในโครงการ ai builders :https://github.com/ai-builders
 * [mediumโปรเจค](https://medium.com/@phakkhaphonartburai/ai-%E0%B9%81%E0%B8%A2%E0%B8%81%E0%B9%81%E0%B8%A2%E0%B8%B0%E0%B9%81%E0%B8%A1%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%88%E0%B8%B2%E0%B8%99-%E0%B8%81%E0%B8%B1%E0%B8%9A-%E0%B9%81%E0%B8%A1%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%9E%E0%B8%B4%E0%B8%A9-784bf470c592)
 ## แนะนำการใช้งานเบื้องต้น 
-### สามารถรันบน streamlit cloud ได้
+### สามารถรันบน streamlit ได้โดย
 * git clone ได้เลย
   * https://github.com/alicelouis47/maengda-classification-detection.git
 * วิธีการติดตั้ง libraries 
