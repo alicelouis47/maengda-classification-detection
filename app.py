@@ -4,7 +4,6 @@ import pandas as pd
 import os.path as op
 from pathlib import Path
 from PIL import Image
-import icedata
 import PIL, requests
 import torch
 from torchvision import transforms
