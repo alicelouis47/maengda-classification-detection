@@ -1,6 +1,3 @@
-import json
-import ast
-import pandas as pd
 import os.path as op
 from pathlib import Path
 from PIL import Image
@@ -10,7 +7,6 @@ from torchvision import transforms
 from fastbook import *
 from fastai.vision.all import *
 import os.path as op
-import pandas as pd
 from tqdm import tqdm
 from time import sleep
 from glob import glob
@@ -19,8 +15,6 @@ from sklearn.metrics import precision_recall_fscore_support, accuracy_score, roc
 import matplotlib.pyplot as plt
 from sklearn.svm import SVC
 import os
-import torchvision.transforms.functional as fn
-from torchvision.transforms.functional import crop
 import numpy as np
 import streamlit as st
 import urllib.request
@@ -71,10 +65,7 @@ if uploaded_file is not None:
     learn_BF = load_learner('VGG16_fastai.pkl')
     learn_B = load_learner('densenet201_fastai.pkl')
     learn_F = load_learner('resnext50_fastai.pkl')
-    valid_tfms = tfms.A.Adapter([*tfms.A.resize_and_pad((img_size,img_size)), tfms.A.Normalize()])
-    # predict image
-    pred_dict  = model_type.end2end_detect(img, valid_tfms, model, class_map=class_map, detection_threshold=0.7)
-    # print("ภาพที่ %.2f" %num_img)
+    
     img_out = img
     img_out = np.array(img_out)
 
