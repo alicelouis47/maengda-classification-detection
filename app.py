@@ -4,8 +4,6 @@ import pandas as pd
 import os.path as op
 from pathlib import Path
 from PIL import Image
-from icevision.models import *
-from icevision.all import *
 import icedata
 import PIL, requests
 import torch
@@ -32,7 +30,7 @@ import numpy as np
 import streamlit as st
 
 
-st.title('Mangda classification')
+st.title('Maengda classification')
 st.header('AI Builders ปีที่ 2')
 st.caption('')
 st.subheader('จัดทำโดย นายภัคพล อาจบุราย ชั้น ม.6 โรงเรียนวิทยาศาสตร์จุฬาภรณราชวิทยาลัย บุรีรัมย์')
@@ -94,7 +92,6 @@ if uploaded_file is not None:
         prop_float = prop_F.item()
         st.success(f"This is {Pre_F[0]}  with the probability of {prop_float*100:.02f}%")
         # print('class:',Pre_F[0], ",accuracy =", '%.3f' %prop_float)
-        # Draw draw boxes
         st.image(img_out, use_column_width=True)
     
     else:
@@ -103,7 +100,6 @@ if uploaded_file is not None:
         prop_float = prop_B.item()
         st.success(f"This is {Pre_B[0]}  with the probability of {prop_float*100:.02f}%")
         # print('class:',Pre_B[0], ",accuracy =", '%.3f' %prop_float)
-        # Draw draw boxes
         st.image(img_out, use_column_width=True)
 
          
