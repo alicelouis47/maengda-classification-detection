@@ -23,7 +23,6 @@ import urllib.request
 st.title('Maengda classification')
 st.header('AI Builders ปีที่ 2')
 st.caption('')
-st.subheader('จัดทำโดย นายภัคพล อาจบุราย ชั้น ม.6 โรงเรียนวิทยาศาสตร์จุฬาภรณราชวิทยาลัย บุรีรัมย์')
 st.caption('')
 st.subheader('โพรเจกต์นี้ เป็นส่วนหนึ่งของโครงการ AI Builders (ก่อตั้งจากความร่วมมือของ VISTEC, AIResearch และ Central Digital)')
 st.caption('')
