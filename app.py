@@ -48,15 +48,15 @@ st.caption('Credit: https://www4.fisheries.go.th/local/index.php/main/view_activ
 
 uploaded_file = st.file_uploader("อัปโหลดไฟล์ภาพ")
 
-# download model
-# model_url = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/VGG16_fastai.pkl"
-# urllib.request.urlretrieve(model_url,"VGG16_fastai.pkl")
+#download model
+model_url = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/VGG16_fastai.pkl"
+urllib.request.urlretrieve(model_url,"VGG16_fastai.pkl")
 
-# model_url1 = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/densenet201_fastai.pkl"
-# urllib.request.urlretrieve(model_url1,"densenet201_fastai.pkl")
+model_url1 = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/densenet201_fastai.pkl"
+urllib.request.urlretrieve(model_url1,"densenet201_fastai.pkl")
 
-# model_url2 = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/resnext50_fastai.pkl"
-# urllib.request.urlretrieve(model_url2,"resnext50_fastai.pkl")
+model_url2 = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/resnext50_fastai.pkl"
+urllib.request.urlretrieve(model_url2,"resnext50_fastai.pkl")
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
