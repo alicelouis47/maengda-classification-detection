@@ -46,7 +46,7 @@ st.caption('')
 st.caption('Credit: https://www4.fisheries.go.th/local/index.php/main/view_activities/1210/88780')
 
 
-uploaded_file = st.file_uploader("อัปโหลดไฟล์ภาพ")
+uploaded_file = st.file_uploader("อัปโหลดไฟล์ภาพ .JPG เท่านั้น!!")
 
 #download model
 model_url = "https://huggingface.co/alicelouis/maengda_classification/resolve/main/VGG16_fastai.pkl"
